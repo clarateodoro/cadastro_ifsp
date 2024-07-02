@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-        include('includes/conex%C3%A3o.php');
+        include('includes/conexao.php');
         $nome = $_POST['nome'];
         $estadoe = $_POST['estado'];
         echo "<h1>Dados da cidade</h1>";

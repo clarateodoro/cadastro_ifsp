@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-        include('includes/conex%C3%A3o.php');
+        include('includes/conexao.php');
         $sql = "SELECT * FROM cidade";
         $result = mysqli_query($con, $sql);
     ?>
