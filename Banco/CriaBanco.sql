@@ -32,7 +32,7 @@ insert into Cliente (nome, id_cidade) values
     ('Mariana Moraes', 1),
     ('Ana Clara Teodoro', 2),
     ('Anthony Feitosa', 3),
-    ('Murilo Vargas', 4),
+    ('Murilo Varges', 4),
     ('Cássio Estércio', 4);
 select * from Cidade where id = 1;
 update Cidade set nome = 'Birigui' where id = 1;
