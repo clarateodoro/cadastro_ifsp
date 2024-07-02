@@ -2,7 +2,8 @@
 $hostname ='localhost';
 $username = 'root';
 $password = '';
-$port     = '3307';
+$database = 'IFSP';
+$port     = 3307;
 
 $con =  mysqli_connect($hostname, $username, $password, $database, $port);
 if(mysqli_connect_errno()){
