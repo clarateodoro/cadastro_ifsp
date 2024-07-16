@@ -29,8 +29,8 @@
                 echo "<td>".$row['nome']. "</td>";
                 echo "<td>".$row['estado']. "</td>";
                 echo "<td>".$row['estado']. "</td>";
-                echo "<td><a href='alteraCidade.php?id=".$row['id']."'>Alterar</a></td>";
-                echo "<td><a href='deletaCidade.php?id=".$row['id']."'>Deletar</a></td>";
+                echo "<td><a href='AlteraCidade.php?id=".$row['id']."'>Alterar</a></td>";
+                echo "<td><a href='DeletaCidade.php?id=".$row['id']."'>Deletar</a></td>";
                 echo "<tr>";
             }
         ?>

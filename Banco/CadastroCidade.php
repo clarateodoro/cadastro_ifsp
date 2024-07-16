@@ -28,5 +28,8 @@
             echo mysqli_error($con);
         }
     ?>
+    <form action="index.html" method="get">
+        <button type="submit">Voltar para página inicial</button>
+    </form>
 </body>
 </html>
