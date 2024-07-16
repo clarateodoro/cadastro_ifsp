@@ -49,6 +49,15 @@
         form:nth-child(2) button[type="submit"]:hover {
             background-color: #a52714; /* Vermelho mais escuro no hover */
         }
+
+        /* Estilo alternativo para o segundo botão */
+        form:nth-child(4) button[type="submit"] {
+            background-color: #c0392b; /* Vermelho escuro */
+        }
+
+        form:nth-child(4) button[type="submit"]:hover {
+            background-color: #a52714; /* Vermelho mais escuro no hover */
+        }
     </style>
 </head>
 <body>
@@ -62,5 +71,12 @@
         <button type="submit">Listar Cidades</button>
     </form>
     
+    <form action="CadastroCliente.html" method="get">
+        <button type="submit">Cadastrar Clientes</button>
+    </form>
+    
+    <form action="ListarCliente.php" method="get">
+        <button type="submit">Listar Clientes</button>
+    </form>
 </body>
 </html>
