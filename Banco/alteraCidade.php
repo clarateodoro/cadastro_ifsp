@@ -1,0 +1,65 @@
+<?php
+    include('conexao.php');
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM cidade WHERE id = $id";
+    $result = mysqli_query($con,$sql);
+    $row = mysqli_fetch_array($result);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "CadastroCidade.php" method = "post">
+        <fieldset>
+            <legend>Cadastro de Cidades</legend>
+            <div>
+            <label for = "nome">Nome</label>
+            <input type = "text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for = "estado">Estado</label>
+                <select name = "estado" id="estado">
+                    <option value = "AC">Acre</option>
+                    <option value = "AL">Alagoas</option>
+                    <option value = "AP">Amapá</option>
+                    <option value = "AM">Amazonas</option>
+                    <option value = "ES">Espírito Santo</option>
+                    <option value = "Go">Goiás</option>
+                    <option value = "MA">Maranhão</option>
+                    <option value = "MT">Mato Grosso</option>
+                    <option value = "MS">Mato Grosso do Sul</option>
+                    <option value = "MT">Mato Grosso</option>
+                    <option value = "MG">Minas Gerais</option>  
+                    <option value = "PA">Pará</option>
+                    <option value = "PB">Paraíba</option>
+                    <option value = "PR">Paraná</option>
+                    <option value = "PE">Pernabuco</option>
+                    <option value = "PI">Piauí</option>
+                    <option value = "RJ">Rio de Janeiro</option>
+                    <option value = "RN">Rio Grande do Norte</option>
+                    <option value = "RS">Rio Grande do Sul</option>
+                    <option value = "RO">Rondônia</option>
+                    <option value = "RR">Roraima</option>
+                    <option value = "SC">Santa Catarina</option>
+                    <option value = "SP">São Paulo</option>
+                    <option value = "SE">Sergipe</option>
+                    <option value = "TO">Tocantins</option>
+                    <option value = "DF">Brasília</option>
+                    
+                    
+                </select>
+            </div>
+            <div>
+                <button type = "submit">Cadastrar</button>
+            </div>            
+            <button type="submit">Voltar para a Página Inicial</button>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
