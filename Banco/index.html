@@ -5,9 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* Fundo cinza claro */
+            color: #333; /* Texto preto */
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Centraliza o conteúdo */
+        }
+
+        h1 {
+            color: #6b3; /* Verde escuro para o título */
+            margin-top: 20px;
+        }
+
+        /* Estilo para os botões */
+        form {
+            margin-top: 20px;
+        }
+
+        button[type="submit"] {
+            background-color: #6b3; /* Verde escuro */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #4a2; /* Verde mais escuro no hover */
+        }
+
+        /* Estilo alternativo para o segundo botão */
+        form:nth-child(2) button[type="submit"] {
+            background-color: #c0392b; /* Vermelho escuro */
+        }
+
+        form:nth-child(2) button[type="submit"]:hover {
+            background-color: #a52714; /* Vermelho mais escuro no hover */
+        }
+    </style>
 </head>
 <body>
-    <h1>Seja bem vindo!</h1>
+    <h1>Seja bem-vindo!</h1>
     
     <form action="CadastroCidade.html" method="get">
         <button type="submit">Cadastrar Cidades</button>
@@ -17,6 +62,5 @@
         <button type="submit">Listar Cidades</button>
     </form>
     
-   
 </body>
 </html>
