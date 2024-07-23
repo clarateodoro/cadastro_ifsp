@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Cliente</title>
+    <title>Deletar Cliente</title>
     <style>
         /* Estilos gerais */
         body {
@@ -49,23 +49,17 @@
     </style>
 </head>
 <body>
+    <h1>Deletar Cliente</h1>
     <?php
         include('includes/conexao.php');
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        echo "<h1>Dados do cliente</h1>";
-        echo "Nome: $nome<br>";
-        echo "Email: $email<br>";
-
-        $sql = "INSERT INTO cliente (nome, email)";
-        $sql .= " VALUES ('$nome', '$estado')";
+        $id = $_GET['id'];
+        $sql = "DELETE FROM cliente WHERE id = $id";
         $result = mysqli_query($con, $sql);
-
         if($result){
-            echo "<h2>Dados cadastrados com sucesso!</h2>";
-        } else {
-            echo "<h2 class='error'>Erro ao cadastrar</h2>";
-            echo "<h2 class='error'>" . mysqli_error($con) . "</h2>";
+            echo "<h2>Dados deletados!</h2>";
+        }else{
+            echo "<h2 class='error'>Erro ao deletar!</h2>";
+            echo "<h2 class='error'>".mysqli_error($con)."</h2>";
         }
     ?>
     <form action="index.html" method="get">

@@ -17,10 +17,9 @@ create table CLiente
     senha     varchar(100),
     ativo     bool,
     id_cidade int,
-    primary key(id)
-    constraint fk_ClienteCidade
-        foreign key (id_cidade) references cidade(id)
-)
+    primary key(id),
+    constraint fk_ClienteCidade foreign key (id_cidade) references cidade(id)
+);
 insert into Cidade(nome, estado) values
     ('Birigui', 'SP'),
     ('Xique-Xique', 'BA'),

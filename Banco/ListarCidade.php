@@ -98,20 +98,7 @@
             <th style="background-color: #6b3; color: white;">Alterar</th>
             <th style="background-color: #6b3; color: white;">Deletar</th>
         </tr>
-        <tr>
-            <td>1</td>
-            <td>São Paulo</td>
-            <td>SP</td>
-            <td><a href="AlteraCidade.php?id=1">Alterar</a></td>
-            <td><a href="DeletaCidade.php?id=1">Deletar</a></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Rio de Janeiro</td>
-            <td>RJ</td>
-            <td><a href="AlteraCidade.php?id=2">Alterar</a></td>
-            <td><a href="DeletaCidade.php?id=2">Deletar</a></td>
-        </tr>
+     
     </table>
     <a href="index.html" class="back-link">Voltar para a Página Inicial</a>
 </body>

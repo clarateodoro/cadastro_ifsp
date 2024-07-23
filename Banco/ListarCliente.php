@@ -88,30 +88,17 @@
     </style>
 </head>
 <body>
-    <h1>Consulta de Cidades</h1>
+    <h1>Consulta de Cliente</h1>
     <a href="CadastroCliente.html" class="button">Cadastrar Novo Cliente</a>
     <table align="center" border="1" width="80%">
         <tr>
-            <th style="background-color: #6b3; color: white;">Código</th>
+            <th style="background-color: #6b3; color: white;">Email</th>
             <th style="background-color: #6b3; color: white;">Nome</th>
-            <th style="background-color: #6b3; color: white;">Estado</th>
+            <th style="background-color: #6b3; color: white;">Senha</th>
             <th style="background-color: #6b3; color: white;">Alterar</th>
             <th style="background-color: #6b3; color: white;">Deletar</th>
         </tr>
-        <tr>
-            <td>1</td>
-            <td>São Paulo</td>
-            <td>SP</td>
-            <td><a href="AlteraCidade.php?id=1">Alterar</a></td>
-            <td><a href="DeletaCidade.php?id=1">Deletar</a></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Rio de Janeiro</td>
-            <td>RJ</td>
-            <td><a href="AlteraCidade.php?id=2">Alterar</a></td>
-            <td><a href="DeletaCidade.php?id=2">Deletar</a></td>
-        </tr>
+        
     </table>
     <a href="index.html" class="back-link">Voltar para a Página Inicial</a>
 </body>
