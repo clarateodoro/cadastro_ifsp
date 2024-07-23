@@ -21,16 +21,48 @@
             margin-top: 20px;
         }
 
-        h2 {
-            color: #6b3; /* Verde escuro para mensagens de sucesso */
+        /* Estilos para o formulário */
+        form {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        /* Estilo para mensagem de erro */
-        h2.error {
-            color: #c0392b; /* Vermelho escuro para mensagens de erro */
+        legend {
+            font-size: 1.5em;
+            color: #6b3; /* Verde escuro para o título do formulário */
+            margin-bottom: 10px;
         }
 
-        /* Estilo para o botão */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333; /* Texto preto para os labels */
+        }
+
+        input[type="text"], select {
+            width: calc(100% - 20px);
+            padding: 8px;
+            font-size: 1em;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: #fff;
+            background-image: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="10mm"><path d="M17 20l8-8h-6v-8h-4v8h-6l8 8z"/></svg>');
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+
         button[type="submit"] {
             background-color: #6b3; /* Verde escuro */
             color: white;
@@ -40,34 +72,59 @@
             cursor: pointer;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-            margin-top: 20px;
         }
 
         button[type="submit"]:hover {
             background-color: #4a2; /* Verde mais escuro no hover */
         }
+
+        button[type="submit"], button[type="button"] {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
-    <?php
-        include('includes/conexao.php');
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        echo "<h1>Dados do cliente</h1>";
-        echo "Nome: $nome<br>";
-        echo "Email: $email<br>";
-
-        $sql = "INSERT INTO cliente (nome, email)";
-        $sql .= " VALUES ('$nome', '$estado')";
-        $result = mysqli_query($con, $sql);
-
-        if($result){
-            echo "<h2>Dados cadastrados com sucesso!</h2>";
-        } else {
-            echo "<h2 class='error'>Erro ao cadastrar</h2>";
-            echo "<h2 class='error'>" . mysqli_error($con) . "</h2>";
-        }
-    ?>
+    <form action="CadastroClienteExe.php" method="post">
+        <fieldset>
+            <legend>Cadastro de Clientes</legend>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <input type="text" name="senha" id="senha" required>
+            </div>
+            <div>
+                <label for="ativo">Ativo</label>
+                <input type="checkbox" name="ativo" id="ativo" required>
+            </div>
+            <div>
+                <label for="cidade"> Cidade</label>
+                <select name="cidade" id="cidade">
+                <?php
+                    include('includes/conexao.php');
+                    $sql = "SELECT * FROM cidade";
+                    $result = mysqli_query($con.$sql);
+                    while($row = mysqli_fetch_array($result)){
+                        echo "<option values='".$row['id']."'>"
+                              .$row['nome']."/".$row['estado']
+                              ."</option>";
+                    }
+                ?>
+                </select>
+            </div>
+            
+            <div>
+                <button type="submit">Cadastrar</button>
+            </div>            
+        </fieldset>
+    </form>
+    
     <form action="index.html" method="get">
         <button type="submit">Voltar para página inicial</button>
     </form>

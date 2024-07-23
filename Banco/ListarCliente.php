@@ -95,6 +95,7 @@
             <th style="background-color: #6b3; color: white;">Email</th>
             <th style="background-color: #6b3; color: white;">Nome</th>
             <th style="background-color: #6b3; color: white;">Senha</th>
+            <th style="background-color: #6b3; color: white;">Ativo</th>
             <th style="background-color: #6b3; color: white;">Alterar</th>
             <th style="background-color: #6b3; color: white;">Deletar</th>
         </tr>
