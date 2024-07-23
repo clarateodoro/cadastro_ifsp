@@ -59,11 +59,10 @@
         echo "<h1>Dados do cliente</h1>";
         echo "Nome: $nome<br>";
         echo "Email: $email<br>";
-
-        $sql = "INSERT INTO cliente (nome, email)";
-        $sql .= " VALUES ('$nome', '$estado')";
+        $sql = "INSERT INTO cliente (nome, email, senha, ativo, id_Cidade)";
+        $sql .= " VALUES ('".$nome."', '".$email."','".$senha."', '".$ativo."', '".$cidade."')";
+        echo $sql;
         $result = mysqli_query($con, $sql);
-
         if($result){
             echo "<h2>Dados cadastrados com sucesso!</h2>";
         } else {

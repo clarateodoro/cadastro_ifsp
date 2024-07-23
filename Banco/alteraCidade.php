@@ -17,14 +17,14 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f5f5f5; /* Fundo cinza claro */
-            color: #333; /* Texto preto */
+            color: #c039; /* Texto preto */
             margin: 0;
             padding: 0;
             text-align: center; /* Centraliza o conteúdo */
         }
 
         h1 {
-            color: #c0392b; /* Vermelho escuro para o título */
+            color: #c039; /* Vermelho escuro para o título */
             margin-top: 20px;
         }
 
@@ -42,7 +42,7 @@
             display: block;
             margin-bottom: 8px;
             font-weight: bold;
-            color: #333;
+            color:#c039;
         }
 
         input[type="text"], select {
@@ -67,7 +67,7 @@
         }
 
         button[type="submit"] {
-            background-color: #6b3; /* Verde escuro */
+            background-color: darkgreen; /* Verde escuro */
             color: white;
             border: none;
             padding: 12px 20px;
@@ -79,7 +79,7 @@
         }
 
         button[type="submit"]:hover {
-            background-color: #4a2; /* Verde mais escuro no hover */
+            background-color: darkgreen; 
         }
     </style>
 </head>

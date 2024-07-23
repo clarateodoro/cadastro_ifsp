@@ -16,15 +16,15 @@
         /* Estilos gerais */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5; /* Fundo cinza claro */
-            color: #333; /* Texto preto */
+            background-color: lightgreen; 
+            color: #c039; 
             margin: 0;
             padding: 0;
-            text-align: center; /* Centraliza o conteúdo */
+            text-align: center; 
         }
 
         h1 {
-            color: #c0392b; /* Vermelho escuro para o título */
+            color: #c039;
             margin-top: 20px;
         }
 
@@ -35,19 +35,19 @@
 
         /* Mensagem de sucesso */
         .success {
-            color: #6b3; /* Verde escuro para mensagens de sucesso */
+            color: darkgreen; 
             font-weight: bold;
         }
 
         /* Mensagem de erro */
         .error {
-            color: #c0392b; /* Vermelho escuro para mensagens de erro */
+            color: #c039; /* Vermelho escuro para mensagens de erro */
             font-weight: bold;
         }
 
         /* Estilo para o botão */
         button[type="submit"] {
-            background-color: #6b3; /* Verde escuro */
+            background-color: darkgreen; 
             color: white;
             border: none;
             padding: 10px 20px;
@@ -59,7 +59,7 @@
         }
 
         button[type="submit"]:hover {
-            background-color: #4a2; /* Verde mais escuro no hover */
+            background-color: darkgreen;
         }
     </style>
 </head>

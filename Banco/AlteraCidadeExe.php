@@ -24,7 +24,7 @@
         }
 
         h1 {
-            color: #c0392b; /* Vermelho escuro para o título */
+            color: #c039; /* Vermelho escuro para o título */
             margin-top: 20px;
         }
 
@@ -35,19 +35,19 @@
 
         /* Mensagem de sucesso */
         .success {
-            color: #6b3; /* Verde escuro para mensagens de sucesso */
+            color:darkgreen; /* Verde escuro para mensagens de sucesso */
             font-weight: bold;
         }
 
         /* Mensagem de erro */
         .error {
-            color: #c0392b; /* Vermelho escuro para mensagens de erro */
+            color: #c039; /* Vermelho escuro para mensagens de erro */
             font-weight: bold;
         }
 
         /* Estilo para o botão */
         button[type="submit"] {
-            background-color: #6b3; /* Verde escuro */
+            background-color: darkgreen; /* Verde escuro */
             color: white;
             border: none;
             padding: 10px 20px;
@@ -59,7 +59,7 @@
         }
 
         button[type="submit"]:hover {
-            background-color: #4a2; /* Verde mais escuro no hover */
+            background-color: darkgreen; /* Verde mais escuro no hover */
         }
     </style>
 </head>
