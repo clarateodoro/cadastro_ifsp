@@ -5,11 +5,11 @@ create table Cidade
 (
    id      INT auto_increment,
    nome    varchar(100),
-   estado  varchar(002),
+   estado  varchar(100),
    primary key (id)
 );
 
-create table CLiente
+create table Cliente
 (
     id        int auto_increment,
     nome      varchar(100),
